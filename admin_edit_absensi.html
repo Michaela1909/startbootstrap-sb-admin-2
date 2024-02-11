@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>SB Admin 2 - Blank</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,7 +22,6 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-
 
 </head>
 
@@ -156,8 +155,6 @@
                                    aria-label="Search" aria-describedby="basic-addon2">
                         </div>
                     </form>
-                    
-                    
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -279,162 +276,101 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Edit Absensi</h1>
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="inputSemester" class=" col-xl-4 col-form-label">Semester</label>
+                                        <div class="col-xl-8">
+                                            <input type="text" class="form-control" id="inputSemester">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputAngkatan" class="col-xl-4 col-form-label">Tahun Angkatan</label>
+                                        <div class="col-xl-8">
+                                            <input type="text" class="form-control" id="inputAngkatan">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputMK" class="col-xl-4 col-form-label">Mata Kuliah</label>
+                                        <div class="col-xl-8">
+                                            <input type="text" class="form-control" id="inputMK">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputTanggal" class="col-xl-4 col-form-label">Tanggal</label>
+                                        <div class="col-xl-8">
+                                            <input type="date" class="form-control" id="inputTanggal">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-success tambah_btn">Cari</button>
+                                </form>
+                            </div>
+                            &nbsp;                            
+                        </div>
+                        
                     </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Kelas paling banyak dihadiri -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card background-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Kelas Paling Banyak Dihadiri</div>
-                                            <div class="h5 mb-0 font-weight-bold text-primary">Algoritma</div>
-                                            <hr>
-                                            <div>
-                                                <a href="" class="text-xs font-weight-normal text-primary mb-1">View Details</a>
-                                                <span class="fas fa-angle-right	sidebar-dashboard text-primary" style="float: right;"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Kelas paling banyak dihadiri -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card background-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Kelas Paling Jarang Dihadiri</div>
-                                            <div class="h5 mb-0 font-weight-bold text-primary">Struktur Data</div>
-                                            <hr>
-                                            <div>
-                                                <a href="" class="text-xs font-weight-normal text-primary mb-1">View Details</a>
-                                                <span class="fas fa-angle-right	sidebar-dashboard text-primary" style="float: right;"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Mahasiswa paling rajin -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card background-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Mahasiswa Paling Rajin</div>
-                                            <div class="h5 mb-0 font-weight-bold text-primary">3</div>
-                                            <hr>
-                                            <div>
-                                                <a href="" class="text-xs font-weight-normal text-primary mb-1">View Details</a>
-                                                <span class="fas fa-angle-right	sidebar-dashboard text-primary" style="float: right;"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Mahasiswa Potensi Cekal -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card background-danger shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Mahasiswa Potensi Cekal</div>
-                                            <div class="h5 mb-0 font-weight-bold text-primary">2</div>
-                                            <hr>
-                                            <div>
-                                                <a href="" class="text-xs font-weight-normal text-primary mb-1">View Details</a>
-                                                <span class="fas fa-angle-right	sidebar-dashboard text-primary" style="float: right;"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Content Row -->
-
-                    <div class="row">
-
-                        <!-- Area Chart -->
-                        <div class="col-xl-6 col-lg-7">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pie Chart -->
-                        <div class="col-xl-6 col-lg-5">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-bar pt-4 pb-2">
-                                        <canvas id="myBarChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    &nbsp;
+                    <!-- Tabel Mata Kuliah -->
+                    <table id="example" class="display cell-border " style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Tanggal</th>
+                                <th>Nama Mahasiswa</th>
+                                <th>Mata Kuliah</th>
+                                <th>Nama Dosen</th>
+                                <th>Ruang</th>
+                                <th>Jam Mulai</th>
+                                <th>Jam Absensi</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-02-02</td>
+                                <td>Kelvin</td>
+                                <td>Struktur Data</td>
+                                <td>Kusno Prasetya</td>
+                                <td>B342</td>
+                                <td>08.15</td>
+                                <td>-</td>
+                                <td><a class="btn btn-success btn-sm" href="" style="width: 90px">Edit</a></td>                           
+                            </tr>
+                            <tr>
+                                <td>2024-02-02</td>
+                                <td>Nathania Michaela Lisandi</td>
+                                <td>Struktur Data</td>
+                                <td>Kusno Prasetya</td>
+                                <td>B342</td>
+                                <td>08.15</td>
+                                <td>07.50</td>
+                                <td><a class="btn btn-success btn-sm" href="" style="width: 90px">Edit</a></td>                           
+                            </tr>
+                            <tr>
+                                <td>2024-02-02</td>
+                                <td>Zian Carlos</td>
+                                <td>Struktur Data</td>
+                                <td>Kusno Prasetya</td>
+                                <td>B342</td>
+                                <td>08.15</td>
+                                <td>08.05</td>
+                                <td><a class="btn btn-success btn-sm" href="" style="width: 90px">Edit</a></td>                           
+                            </tr>
+                            <tr>
+                                <td>2024-02-02</td>
+                                <td>Yoana Sonia</td>
+                                <td>Struktur Data</td>
+                                <td>Kusno Prasetya</td>
+                                <td>B342</td>
+                                <td>08.15</td>
+                                <td>08.10</td>
+                                <td><a class="btn btn-success btn-sm" href="" style="width: 90px">Edit</a></td>                           
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <!-- /.container-fluid -->
 
@@ -445,7 +381,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; Your Website 2020</span>
                     </div>
                 </div>
             </footer>
@@ -491,13 +427,22 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-bar-demo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script>
+        new DataTable('#example', {
+            columns: [
+                { data: 'tanggal' },
+                { data: 'mata_kuliah' },
+                { data: 'tahun_angkatan' },
+                { data: 'nama_dosen' },
+                { data: 'ruang' },
+                { data: 'jam_mulai' },
+                { data: 'jam_selesai' },
+                { data: 'aksi' },
+            ]
+        });
+    </script>
 
 </body>
 
